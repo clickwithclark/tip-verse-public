@@ -1,0 +1,17 @@
+{
+  "name": "tip-verse",
+  "version": "1.0.0",
+  "scripts": {
+    "build":"if-env TYPE=Server && (cd server && npm install) || (cd client && npm install)",
+    "server":"node ./server/index.js",
+    "client":"cd client && npm start"
+   
+  },
+  "keywords": [],
+  "author": "clickwithclark <clickwithclark@gmail.com>",
+  "license": "MIT",
+  "description": "",
+  "dependencies": {
+    "if-env": "~1.0.4"
+  }
+}
