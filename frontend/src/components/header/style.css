@@ -11,6 +11,7 @@
   display: flex;
   justify-content: space-around;
   flex-direction: column;
+  border-bottom: 4px solid #3a3a3e;
   /* height: 75vh;
   height: 75svh; */
 }

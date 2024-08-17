@@ -10,6 +10,7 @@
   min-height: 25vh;
   color: var(--clr-accent2);
   margin-top: 1rem;
+  border-top: 4px solid #3a3a3e;
 }
 
 .footer__wrapper {
@@ -45,27 +46,37 @@
   padding-top: 1rem;
 }
 @media screen and (min-width: 992px) {
+  .footer {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: 4px solid #3a3a3e;
+  }
   .footer__wrapper {
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     width: 100%;
   }
 
   .footer__logo {
-    width: 150px;
-    border-right: 1px solid #3a3a3e;
+    width: 15vw;
+    border-right: 4px solid #3a3a3e;
     height: 25vh;
     display: flex;
     align-items: center;
-    padding-right: 2rem;
+    padding: 0 2rem;
   }
 
   .footer__details {
     display: flex;
-    width: 50%;
     border: none;
+    padding-right: 2rem;
   }
   .footer__author {
     margin-left: 5rem;
+  }
+
+  .footer__wrapper {
+    padding-top: 0;
+    margin-top: 0;
   }
 }
