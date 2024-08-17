@@ -1,5 +1,6 @@
 import "./style.css";
 import TipverseLogo from "img/TipverseLogo.png";
+import GitHubLogo from "img/gh_logo.png";
 function Footer() {
   return (
     <footer className="footer">
@@ -9,8 +10,7 @@ function Footer() {
         </figure>
         <div className="footer__github-log">
           <a href="https://github.com/clickwithclark/tip-verse-public">
-            {" "}
-            <img src="/src/assets/img/gh_logo.png" alt="github icon" />
+            <img src={GitHubLogo} alt="github icon" />
           </a>
         </div>
         <div className="footer__details">
