@@ -3,3 +3,4 @@
 
 npx --yes commitlint --edit "$1"
 
+npx --yes commitlint --edit "$1"

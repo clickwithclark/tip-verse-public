@@ -1,6 +1,6 @@
 import TipList from "../tip-list";
 import "./style.css";
-import Card from "../shared/Card";
+import Card from "../../components/shared/Card";
 import TipContext from "context/TipContext";
 import { useContext, useEffect, useRef } from "react";
 
@@ -13,10 +13,13 @@ function Main() {
     if (!initialized.current) {
       initialized.current = true;
 
-      (async () => {
-        await fetchTips();
-      })();
+     (async () => {
+       await fetchTips();
+     })();
+
     }
+    
+  
   }, []);
   return (
     <main>
