@@ -77,7 +77,7 @@
 .modal-form__submit-btn {
   background-color: var(--clr-primary);
   cursor: pointer;
-  width: 50%;
+  /* width: 50%; */
   margin: 12px auto 0;
 }
 .modal-form__submit-btn:hover {
