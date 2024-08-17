@@ -1,0 +1,13 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 1rem;
+  font-family: var(--ff-title);
+  font-size: var(--fs-200);
+  background-color: rgba(0, 0, 0, 0.4);
+  min-height: 25vh;
+  color: var(--clr-accent2);
+  margin-top: 1rem;
+}

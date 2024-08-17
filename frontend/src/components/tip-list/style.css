@@ -1,0 +1,11 @@
+.tiplist__no-tips {
+  font-family: var(--ff-title);
+  font-size: var(--fs-300);
+  color: var(--clr-accent1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin-top: 3rem;
+  min-height: 40svh;
+}

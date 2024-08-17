@@ -1,0 +1,41 @@
+.tip__container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #253a4a;
+
+  box-shadow: var(--box-shadow-0);
+  text-shadow: var(--text-shadow-1);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.tip__title {
+  color: #55f79d;
+  font-family: var(--ff-body);
+  font-weight: bold;
+  font-size: var(--fs-300);
+}
+.tip__description {
+  color: #f8fafc;
+  font-family: var(--ff-title);
+  font-weight: 400;
+  font-size: var(--fs-200);
+}
+.tip__language {
+  color: var(--clr-secondary);
+  font-family: var(--ff-title);
+  font-weight: bold;
+  text-transform: uppercase;
+  align-self: flex-end;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 0.5rem;
+  border-radius: 5px;
+  margin-top: 0.25rem;
+  font-size: var(--fs-100);
+}
+@media screen and (min-width: 992px) {
+  .tip__container {
+  }
+}
