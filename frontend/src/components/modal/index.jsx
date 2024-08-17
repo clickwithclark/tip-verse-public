@@ -1,5 +1,5 @@
 import "./style.css";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useContext } from "react";
 import { TipContext } from "context/TipContext";
 
@@ -29,7 +29,9 @@ function Modal() {
 
   /* -------------------------------------------------------------------*/
   //#endregion [change submit button value randomly]
+  // Keep track of the last phrase used
 
+  const lastPhrase = useRef("");
   useEffect(() => {
     // stop scrolling when modal open
     const htmlDocument = document.getElementsByTagName("html")[0];
@@ -38,9 +40,16 @@ function Modal() {
       : htmlDocument.classList.remove("lock-scroll");
 
     // change submit button value randomly
+
     if (showModal) {
-      const randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+      let randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+      // Keep generating a random phrase until it's different from the last one
+      while (randomPhrase === lastPhrase.current) {
+        randomPhrase = phrases[Math.floor(Math.random() * phrases.length)];
+      }
       setpostBtnValue(randomPhrase);
+      // Update the last phrase used
+      lastPhrase.current = randomPhrase;
     }
 
     return () => {
