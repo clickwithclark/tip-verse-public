@@ -53,7 +53,7 @@ Searching for tips by keywords, language, or tags (GET)
 Implement data validation to ensure that all required fields are filled out when submitting a new tip.
 Secure the API endpoints with basic security measures, such as limiting the types of content that can be submitted, to prevent spam or abuse.
 
-This prompt and challenge is hosted by [Levi Okoy](https://www.youtube.com/@levi_okoye)
+This prompt and challenge is hosted by [Levi Okoye](https://www.youtube.com/@levi_okoye)
 
 
 
